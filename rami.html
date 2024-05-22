@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html>
-<h1 style="color: red ;"> Rami Nasr </h1>
-<div class="dropdown">
-    <button class="dropbtn">About me</button>
-    <div class="dropdown-content">
-      <a href="#">College</a>
-      <a href="#">High School</a>
-      <a href="#">Scattergood Intern</a>
+<head>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: green; /* Set the whole page background to green */
+        }
+
+        /* Style the dropdown container */
+        .dropdown {
+            position: absolute; 
+            display: inline-block;
+        }
+        .container {
+            background-color: blue; /* Set the rectangle background to blue */
+            width: 50%;
+            height: 98%;
+            position: absolute;left: 290px;
+        }
+        /* Style the dropdown button */
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Style the individual dropdown items */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown items on hover */
+        .dropdown-content a:hover {
+            background-color: #0ad3ee;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button on hover */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"></div>
+    <h1 style="color:#3e8e41; position: absolute; top: 50px; left: 33%;">Welcome to my WebPage!</h1>
+
+    <!-- Dropdown menu container -->
+    <div style="position: absolute; top: 200px; left: 37.5%; display: block;">
+     <div class="dropdown">
+            <button class="dropbtn">About me</button>
+            <div class="dropdown-content">
+                <a href="education.html">Education</a>
+                <a href="aboutme.html">More About Me</a>
+            </div>
+        </div>
     </div>
-  </div>
-<p> I'm goated fr </p>
-<p> Email is: rnasr@haverford.edu </p>
+
+    <div style="position: absolute; top: 200px; left: 43%; display: block;">
+        <div class="dropdown">
+            <button class="dropbtn">Coding Projects</button>
+            <div class="dropdown-content">
+                <a href="musicrec.html">Music Recommendation Project</a>
+                <a href="llns.html">Large Library Navigators Project</a>
+                <a href="hangman.html">Hangman Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: absolute; top: 200px; left: 49%; display: block;">
+        <div class="dropdown">
+            <button class="dropbtn">Work Experience</button>
+            <div class="dropdown-content">
+                <a href="scatterintern.html">Scattergood Internship</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
