@@ -20,10 +20,11 @@
             display: inline-block;
         }
         .container {
-            background-color: blue; /* Set the rectangle background to blue */
+            background: linear-gradient(to top, #00ff99 0%, #669900 100%); /* Set the rectangle background to blue */
             width: 50%;
             height: 100%;
             position: absolute;left: 290px;
+            opacity: 0.5;
         }
         /* Style the dropdown button */
         .dropbtn {
@@ -67,15 +68,30 @@
         .dropdown:hover .dropbtn {
             background-color: #3e8e41;
         }
+        .line {
+            width: 49.9%; /* Width of the line */
+            border: 1px solid greenyellow; /* Thickness and color of the line */
+            position: absolute;
+            top: 80px; /* Position it right under the heading */
+            left: 22.6%; /* Center align it */
+        }
+        .line2 {
+            width: 49.9%; /* Width of the line */
+            border: 1px solid greenyellow; /* Thickness and color of the line */
+            position: absolute;
+            top: 150px; /* Position it right under the heading */
+            left: 22.6%; /* Center align it */
+        }
     </style>
 </head>
 <body>
 
 <div class="container"></div>
-    <h1 style="color:#ffffff; position: absolute; top: 50px; left: 42%;">Welcome!</h1>
-    <p style="color: #ffffff; position: absolute; top: 180px; left: 23%;"> Hi, my name is Rami Nasr. I'm a Palestinian-American student attending Haverford <br> College. Over the past two years of college, I've worked on many coding projects,<br> made tons of friends, and worked a variety of jobs.</p>
+    <h1 style="color:#ffffff; position: absolute; top: 5px; left: 42%;">Welcome!</h1>
+    <hr class="line">
+    <p style="color: #ffffff; position: absolute; top: 180px; left: 23%;"> Hi, my name is Rami Nasr. I'm a Palestinian-American student attending Haverford <br> College. Over the past two years of college, I've worked on many coding projects,<br> made tons of friends, and worked a variety of jobs. I am now working as a Data <br> Visualization Intern for the Digitcal Scholarship section at Lutnik Library. I created this <br> webpage as a side project and to refine my HTML and CSS skils. Below the "welcome" <br> text you will find dropdown boxes. In these boxes more information about me, my <br> education, projects I've worked on, and the different jobs I've had in my career can be <br> found. Thank you for stopping by! </p>
     <!-- Dropdown menu container -->
-    <div style="position: absolute; top: 120px; left: 37.1%; display: block;">
+    <div style="position: absolute; top: 90px; left: 37.1%; display: block;">
      <div class="dropdown">
             <button class="dropbtn">About me</button>
             <div class="dropdown-content">
@@ -85,7 +101,7 @@
         </div>
     </div>
 
-    <div style="position: absolute; top: 120px; left: 42.6%; display: block;">
+    <div style="position: absolute; top: 90px; left: 42.6%; display: block;">
         <div class="dropdown">
             <button class="dropbtn">Coding Projects</button>
             <div class="dropdown-content">
@@ -96,7 +112,7 @@
         </div>
     </div>
 
-    <div style="position: absolute; top: 120px; left: 49.4%; display: block;">
+    <div style="position: absolute; top: 90px; left: 49.4%; display: block;">
         <div class="dropdown">
             <button class="dropbtn">Work Experience</button>
             <div class="dropdown-content">
@@ -104,19 +120,31 @@
             </div>
         </div>
     </div>
+    <hr class="line2">
 
     
 </body>
-<style>
-    img {
-        width: 20%;
-        height:40%;
-      }
-    
-</style>
+
 <body> 
-    <h2 style="color: white; position: absolute; top: 200px; left: 75%;">Here's what I look like:</h2>
-    <img src = "IMG_8811.jpeg" style="position: absolute; top: 300px; left:75%" alt = "Picture of Rami">
-    
+    <h3 style="color: white; position: absolute; top: 350px; left: 52.5%;"> Below is a picture of me!</h3>
+    <img src = "IMG_8811.jpeg" style="position: absolute; top: 60%; left: 52.7%; width: 20%; height:40%; border-radius: 35%;" alt = "Picture of Rami">
+</body>
+
+<body>
+    <style>
+        .cover {
+            object-fit: cover;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20%;
+        }
+    </style>
+    <h3 style="color: #ffffff; position: absolute; top: 80%; left: 420px;"> Contact Me</h3>
+    <a href="https://www.instagram.com/nasr_rami/" target="_blank"><img src = "insta.png" class="cover" style = "position: absolute; top: 90%; left: 350px;" ></a>
+    <a href="https://www.facebook.com/profile.php?id=100006998838144" target="_blank"><img src = "fblogo.png" class="cover" style = "position: absolute; top: 90%; left: 450px;" ></a>
+    <a href="https://web.snapchat.com/" target="_blank"><img src = "snaplog.png" class="cover" style = "position: absolute; top: 90%; left: 550px;" ></a>
+
 </body>
 </html>
