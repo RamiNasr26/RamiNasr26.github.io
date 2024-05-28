@@ -14,7 +14,7 @@ body {
     position: absolute;
     top: 0;
     left: 25%;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: -1; /* Ensure it stays behind other content */
 }
 .dropdown-container {
@@ -75,6 +75,7 @@ h1, p, h3 {
     color: #ffffff;
     text-align: center;
     position: relative;
+
 }
 img {
     width: 20%;
