@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Images/hav.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: linear-gradient(to top, #00ff99 0%, #669900 100%);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    opacity: 0.5;
+    z-index: -1; /* Ensure it stays behind other content */
+}
+.dropdown-container {
+    position: absolute;
+    top: 12.65%;
+    left: 35%;
+    display: flex;
+    gap: 10px; /* Add space between dropdowns */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #0ad3ee;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.line, .line2 {
+    width: 50%;
+    border: 1px solid greenyellow;
+    position: absolute;
+    left: 25%;
+}
+.line {
+    top: 11.1%;
+}
+.line2 {
+    top: 19.1%;
+}
+h1, p, h3 {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+img {
+    width: 20%;
+    height: auto;
+    border-radius: 35%;
+    display: block;
+    margin: auto;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 90%;
+    left: 32%
+}
+.social-media img {
+    width: 32px;
+    height: 32px;
+    border-radius: 20%;
+}

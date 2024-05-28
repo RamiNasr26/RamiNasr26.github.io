@@ -1,98 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
-    <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: rgb(14, 15, 14); /* Set the whole page background to green */
-            background-image: url('Images/hav.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-        }
-
-        /* Style the dropdown container */
-        .dropdown {
-            position: relative; 
-            display: inline-block;
-        }
-        .container {
-            background: linear-gradient(to top, #00ff99 0%, #669900 100%); /* Set the rectangle background to blue */
-            width: 50%;
-            height: 100%;
-            top: 0%;
-            position: absolute;left: 25%;
-            opacity: 0.5;
-        }
-        /* Style the dropdown button */
-        .dropbtn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Style the dropdown content (hidden by default) */
-        .dropdown-content {
-            display: none;
-            position: relative;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        /* Style the individual dropdown items */
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Change color of dropdown items on hover */
-        .dropdown-content a:hover {
-            background-color: #0ad3ee;
-        }
-
-        /* Show the dropdown content on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Change the background color of the dropdown button on hover */
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
-        .line {
-            width: 49.9%; /* Width of the line */
-            border: 1px solid greenyellow; /* Thickness and color of the line */
-            position: absolute;
-            top: 11.1%; /* Position it right under the heading */
-            left: 25%; /* Center align it */
-        }
-        .line2 {
-            width: 49.9%; /* Width of the line */
-            border: 1px solid greenyellow; /* Thickness and color of the line */
-            position: absolute;
-            top: 19.1%; /* Position it right under the heading */
-            left: 25%; /* Center align it */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Rami Nasr's Portfolio</title>
 </head>
 <body>
-
 <div class="container"></div>
-    <h1 style="color:#ffffff; position: absolute; top: 2%; left: 42%;">Welcome!</h1>
+<h1 style="color:#ffffff; position: absolute; top: 2%; left: 50%; transform: translateX(-50%);">Welcome!</h1>
     <hr class="line">
     <p style="color: #ffffff; position: absolute; top: 20%; left: 25%;"> Hi, my name is Rami Nasr. I'm a Palestinian-American student attending Haverford <br> College. Over the past two years of college, I've worked on many coding projects,<br> made tons of friends, and worked a variety of jobs. I am now working as a Data <br> Visualization Intern for the Digitcal Scholarship section at Lutnik Library. I created this <br> webpage as a side project and to refine my HTML and CSS skills. Below the "welcome" <br> text you will find dropdown boxes. In these boxes more information about me, my <br> education, projects I've worked on, and the different jobs I've had in my career can be <br> found. Thank you for stopping by! </p>
     <!-- Dropdown menu container -->
-    <div style="position: absolute; top: 12.65%; left: 35%; display: block;">
+    <div style="position: absolute; top: 12.65%; left: 34.5%; display: block;">
      <div class="dropdown">
             <button class="dropbtn">About me</button>
             <div class="dropdown-content">
@@ -113,7 +31,7 @@
         </div>
     </div>
 
-    <div style="position: absolute; top: 12.65%; left: 52%; display: block;">
+    <div style="position: absolute; top: 12.65%; left: 53%; display: block;">
         <div class="dropdown">
             <button class="dropbtn">Work Experience</button>
             <div class="dropdown-content">
@@ -121,31 +39,24 @@
             </div>
         </div>
     </div>
-    <hr class="line2">
+    <hr class="line2">    
 
-    
-</body>
 
-<body> 
+
     <h3 style="color: white; position: absolute; top: 50%; left: 56%;"> Below is a picture of me!</h3>
     <img src = "Images/IMG_8811.jpeg" style="position: absolute; top: 60%; left: 55%; width: 20%; height:40%; border-radius: 35%;" alt = "Picture of Rami">
-</body>
-
-<body>
-    <style>
-        .cover {
-            object-fit: cover;
-        }
-        img {
-            width: 32px;
-            height: 32px;
-            border-radius: 20%;
-        }
-    </style>
     <h3 style="color: #ffffff; position: absolute; top: 80%; left: 34%;"> Contact Me</h3>
-    <a href="https://www.instagram.com/nasr_rami/" target="_blank"><img src = "Images/insta.png" class="cover" style = "position: absolute; top: 90%; left: 30%;" ></a>
-    <a href="https://www.facebook.com/profile.php?id=100006998838144" target="_blank"><img src = "Images/fblogo.png" class="cover" style = "position: absolute; top: 90%; left: 37%;" ></a>
-    <a href="https://web.snapchat.com/" target="_blank"><img src = "Images/snaplog.png" class="cover" style = "position: absolute; top: 90%; left: 44%;" ></a>
 
+    <div class="social-media">
+        <a href="https://www.instagram.com/nasr_rami/" target="_blank">
+            <img src = "Images/insta.png" alt= "Instagram Logo" >
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100006998838144" target="_blank">
+            <img src = "Images/fblogo.png"  alt= "facebook Logo" >
+        </a>
+        <a href="https://web.snapchat.com/" target="_blank">
+            <img src = "Images/snaplog.png" alt="Snapchat logo">
+        </a>
+    </div>
 </body>
 </html>
