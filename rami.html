@@ -7,7 +7,16 @@
 </head>
 <body>
 <div class="container"></div>
-<h1 style="color:#ffffff; position: absolute; top: 2%; left: 50%; transform: translateX(-50%);">Welcome!</h1>
+<h2 id="datetime"></h2>
+<script>
+  // Get current date and time
+  var now = new Date();
+  var datetime = now.toLocaleString();
+  // Insert date and time into HTML
+  document.getElementById("datetime").innerHTML = datetime;
+</script>
+<h1 style="color:#b3ffb6; position: absolute; top: 1%; left: 15%; transform: translateX(-50%);">Rami Nasr's Portfolio</h1>
+<h1 style="color:#b3ffb6; position: absolute; top: 1%; left: 50%; transform: translateX(-50%);">Welcome!</h1>
     <hr class="line">
     <p> Hi, my name is Rami Nasr. 
         I'm a Palestinian-American student attending Haverford 
@@ -50,9 +59,9 @@
 
 
 
-    <h3 style="color: white; position: absolute; top: 50%; left: 56%;"> Below is a picture of me!</h3>
+    <h3 style="color: #b3ffb6; position: absolute; top: 50%; left: 56%;"> Below is a picture of me!</h3>
     <img src = "Images/IMG_8811.jpeg" style="position: absolute; top: 60%; left: 55%; width: 20%; height:40%; border-radius: 35%;" alt = "Picture of Rami">
-    <h3 style="color: #ffffff; position: absolute; top: 80%; left: 34%;"> Contact Me</h3>
+    <h3 style="color: #b3ffb6; position: absolute; top: 80%; left: 34%;"> Contact Me</h3>
 
     <div class="social-media">
         <a href="https://www.instagram.com/nasr_rami/" target="_blank">
