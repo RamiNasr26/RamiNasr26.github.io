@@ -22,7 +22,7 @@ body {
     top: 12.65%;
     left: 35%;
     display: flex;
-    gap: 10px; /* Add space between dropdowns */
+    gap: 0%; /* Add space between dropdowns */
 }
 .dropdown {
     position: relative;
@@ -61,16 +61,18 @@ body {
     background-color: #3e8e41;
 }
 .line, .line2 {
-    width: 50%;
-    border: 1px solid rgb(77, 77, 122);
+    width: 100%;
+    border: 3px solid rgb(77, 77, 122);
     position: absolute;
-    left: 25%;
+    left: 0%;
+    gap: 5%;
+    opacity: 0.7;
 }
 .line {
-    top: 11.1%;
+    top: 8%;
 }
 .line2 {
-    top: 19%;
+    top: 10%;
 }
 p {
     color: #ffffff;
@@ -78,6 +80,13 @@ p {
     top:20%;
     left: 25%;
 }
+h2 {
+    color: #b3ffb6;
+    right: 10%;
+    position: absolute;
+    top: 1%;
+}
+
 img {
     width: 20%;
     height: auto;
