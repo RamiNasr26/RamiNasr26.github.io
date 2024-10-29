@@ -1,23 +1,71 @@
 <!DOCTYPE html>
-<html>
-	<head>
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0" >
-        <meta http-equiv="refresh" content="rami.html">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="utf-8">
-		<title>index file</title>
-		<script
-        type="text/javascript">
-        window.location.href = "rami.html"
-		</script>
-		<script>
-			sap.ui.getCore().attachInit(function () {
-				new sap.m.Text({
-					text : "SAPUI5 is loaded successfully!"
-				}).placeAt("content");
-			});
-		</script>
-	</head>
-	<body class="sapUiBody" id="content">
-	</body>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rami Nasr's Portfolio</title>
+</head>
+<body>
+<div class="container">
+    <h2 id="datetime"></h2>
+    <script>
+        // Get current date and time
+        var now = new Date();
+        var datetime = now.toLocaleString();
+        // Insert date and time into HTML
+        document.getElementById("datetime").innerHTML = datetime;
+    </script>
+    <h1>Rami Nasr's Portfolio</h1>
+    <hr class="line">
+    <div class="square">
+        <p>Hi, my name is Rami Nasr. I'm a Palestinian-American student attending Haverford College. Over the past two years of college, I've worked on many coding projects, made tons of friends, and worked a variety of jobs. I am now working as a Data Visualization Intern for the Digital Scholarship section at Lutnik Library. I created this webpage as a side project to refine my HTML and CSS skills. Below the "welcome" text you will find dropdown boxes. In these boxes, more information about me, my education, projects I've worked on, and the different jobs I've had in my career can be found. Thank you for stopping by!</p>
+    </div>
+    
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <button class="dropbtn">About Me</button>
+            <div class="dropdown-content">
+                <a href="education.html">Education</a>
+                <a href="aboutme.html">More About Me</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Coding Projects</button>
+            <div class="dropdown-content">
+                <a href="musicrec.html">Music Recommendation Project</a>
+                <a href="llns.html">Large Library Navigators Project</a>
+                <a href="hangman.html">Hangman Project</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Work Experience</button>
+            <div class="dropdown-content">
+                <a href="scatterintern.html">Scattergood Internship</a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line2">
+
+    <h3 style="color: #99ffff; text-align: center;">Below is a picture of me!</h3>
+    <img src="Images/IMG_8811.jpeg" alt="Picture of Rami">
+    
+    <h3 style="color: #99ffff; text-align: center;">Find Me On</h3>
+    <div id="contact-info">
+        <p>rnasr@rfs.edu.ps <br>(415) 734 6338</p>
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.instagram.com/nasr_rami/" target="_blank">
+            <img src="Images/insta.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100006998838144" target="_blank">
+            <img src="Images/fblogo.png" alt="Facebook Logo">
+        </a>
+        <a href="https://web.snapchat.com/" target="_blank">
+            <img src="Images/snaplog.png" alt="Snapchat logo">
+        </a>
+    </div>
+</div>
+</body>
 </html>
